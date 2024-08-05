@@ -60,7 +60,7 @@ To draw a digit on a canvas and predict it, use the `draw_digit.py` script:
 
 #### Using Pre-existing Digit Images
 
-1. Draw and save your digit image (e.g., my_digit.png).
+1. Draw and save your digit image (e.g., `my_digit.png`).
 2. Place it in the `data` directory or specify its path in the `predict_digit.py` script.
 3. Run the prediction script:
 
