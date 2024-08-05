@@ -54,3 +54,8 @@ mnist_digit_recognition/ <br />
 2. **Model Training:** `scripts/train_model.py`
 3. **Model Evaluation:** `notebooks/03_model_evaluation.ipynb`
 4. **Predicting Hand-Drawn Digits:** `scripts/predict_digit.py`
+
+
+
+## Acknowledgments
+This project structure and initial code examples were inspired by guidance from ChatGPT.
