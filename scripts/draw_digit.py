@@ -28,7 +28,7 @@ class DrawDigitApp:
         self.draw.line([x1, y1, x2, y2], fill='black', width=5)
 
     def save(self):
-        self.image.save("drawn_digit.png")
+        self.image.save("data/drawn_digit.png")
         print("Digit saved as drawn_digit.png")
 
     def clear(self):
