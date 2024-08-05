@@ -56,9 +56,11 @@ To exit the virtual environment:
 ```deactivate```
 #### Returning to the Virtual Environment
 If you have already completed the first-time activation, enter it by typing the command:
+
 ```activate py38```
 
 and exit by typing:
+
 ```deactivate```
 
 ### 2. Train the Model
