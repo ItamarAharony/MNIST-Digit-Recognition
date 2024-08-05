@@ -33,6 +33,7 @@ mnist_digit_recognition/ <br />
 ## Usage
 
 ### 1. Set Up the Environment
+Using Python version 3.5. 
 Ensure you have the required dependencies installed. You can create a virtual environment and install the dependencies using the provided `requirements.txt` file:
 
 ```pip install -r requirements.txt```
