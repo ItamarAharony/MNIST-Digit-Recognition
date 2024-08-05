@@ -10,7 +10,7 @@ def load_data():
     test_images = np.expand_dims(test_images, axis=-1)  # Add channel dimension
     return test_images, test_labels
 
-def load_model(model_path='mnist_cnn_model.h5'):
+def load_model(model_path='saved_models/mnist_cnn_model.h5'):
     return tf.keras.models.load_model(model_path)
 
 def evaluate_model(model, test_images, test_labels):
