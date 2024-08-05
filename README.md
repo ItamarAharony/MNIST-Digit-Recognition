@@ -16,6 +16,9 @@ mnist_digit_recognition/ <br />
 ├── saved_models/ <br />
 │ └── mnist_cnn_model.h5 <br />
 │ <br />
+├── data <br />
+│ └── images of hand-drawn digits <br />
+│ <br />
 ├── README.md <br />
 ├── requirements.txt <br />
 └── .gitignore <br />
