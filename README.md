@@ -4,30 +4,30 @@ This project is a convolutional neural network (CNN) implementation to recognize
 
 ## Project Structure
 
-mnist_digit_recognition/
-│
-├── data/
-│ ├── raw/
-│ └── processed/
-│
-├── notebooks/
-│ ├── 01_data_exploration.ipynb
-│ ├── 02_model_training.ipynb
-│ └── 03_model_evaluation.ipynb
-│
-├── scripts/
-│ ├── data_preprocessing.py
-│ ├── train_model.py
-│ ├── evaluate_model.py
-│ ├── draw_digit.py
-│ └── predict_digit.py
-│
-├── saved_models/
-│ └── mnist_cnn_model.h5
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
+mnist_digit_recognition/ <br />
+│ <br />
+├── data/ <br />
+│ ├── raw/ <br />
+│ └── processed/ <br />
+│ <br />
+├── notebooks/ <br />
+│ ├── 01_data_exploration.ipynb <br />
+│ ├── 02_model_training.ipynb <br />
+│ └── 03_model_evaluation.ipynb <br />
+│ <br />
+├── scripts/ <br />
+│ ├── data_preprocessing.py <br />
+│ ├── train_model.py <br />
+│ ├── evaluate_model.py <br />
+│ ├── draw_digit.py <br />
+│ └── predict_digit.py <br />
+│ <br />
+├── saved_models/ <br />
+│ └── mnist_cnn_model.h5 <br />
+│ <br />
+├── README.md <br />
+├── requirements.txt <br />
+└── .gitignore <br />
 
 
 
