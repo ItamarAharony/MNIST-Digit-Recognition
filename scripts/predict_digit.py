@@ -20,6 +20,6 @@ def predict_digit(img_path):
     return np.argmax(prediction)
 
 if __name__ == "__main__":
-    img_path = 'path_to_your_handdrawn_digit.png'
+    img_path = 'data/drawn_digit.png' #'path_to_your_handdrawn_digit.png'
     predicted_digit = predict_digit(img_path)
     print(f'The predicted digit is: {predicted_digit}')

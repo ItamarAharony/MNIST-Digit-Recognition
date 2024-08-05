@@ -15,21 +15,22 @@ class DrawDigitApp:
         
         self.canvas.bind("<B1-Motion>", self.paint)
         
-        self.save_button = tk.Button(root, text="Save", command=self.save)
+        self.save_button = tk.Button(root, text="Save and Close", command=self.save_and_close)
         self.save_button.pack()
 
         self.clear_button = tk.Button(root, text="Clear", command=self.clear)
         self.clear_button.pack()
 
     def paint(self, event):
-        x1, y1 = (event.x - 1), (event.y - 1)
-        x2, y2 = (event.x + 1), (event.y + 1)
+        x1, y1 = (event.x - 5), (event.y - 5)
+        x2, y2 = (event.x + 5), (event.y + 5)
         self.canvas.create_oval(x1, y1, x2, y2, fill='black', width=5)
         self.draw.line([x1, y1, x2, y2], fill='black', width=5)
 
-    def save(self):
+    def save_and_close(self):
         self.image.save("data/drawn_digit.png")
-        print("Digit saved as drawn_digit.png")
+        print("Digit saved as data/drawn_digit.png")
+        self.root.destroy()  # Close the window
 
     def clear(self):
         self.canvas.delete("all")
