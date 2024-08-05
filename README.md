@@ -36,10 +36,30 @@ mnist_digit_recognition/ <br />
 ## Usage
 
 ### 1. Set Up the Environment
-Using Python version 3.8, any other version may have conflicting dependencies between Tensorflow and NumPy. 
+
+#### First-Time activation
+This project uses Python version 3.8, any other version may have conflicting dependencies between Tensorflow and NumPy. 
+
+
+```conda create -n py38 python=3.8```
+
+```source activate py38```
+
+
+
 Ensure you have the required dependencies installed. You can create a virtual environment and install the dependencies using the provided `requirements.txt` file:
 
+
 ```pip install -r requirements.txt```
+
+To exit the virtual environment:
+```source deactivate```
+#### Returning to the Virtual Environment
+If you have already completed the first-time activation, enter it by typing the command:
+```source activate py38```
+
+and exit by typing:
+```source deactivate```
 
 ### 2. Train the Model
 
