@@ -43,7 +43,7 @@ This project uses Python version 3.8, any other version may have conflicting dep
 
 ```conda create -n py38 python=3.8```
 
-```source activate py38```
+```activate py38```
 
 
 
@@ -53,13 +53,13 @@ Ensure you have the required dependencies installed. You can create a virtual en
 ```pip install -r requirements.txt```
 
 To exit the virtual environment:
-```source deactivate```
+```deactivate```
 #### Returning to the Virtual Environment
 If you have already completed the first-time activation, enter it by typing the command:
-```source activate py38```
+```activate py38```
 
 and exit by typing:
-```source deactivate```
+```deactivate```
 
 ### 2. Train the Model
 
