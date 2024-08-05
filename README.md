@@ -41,10 +41,18 @@ mnist_digit_recognition/ <br />
 
 ## Usage
 
-1. **Data Preprocessing:** `scripts/data_preprocessing.py`
-2. **Model Training:** `scripts/train_model.py`
-3. **Model Evaluation:** `notebooks/03_model_evaluation.ipynb`
-4. **Predicting Hand-Drawn Digits:** `scripts/predict_digit.py`
+### 1. Set Up the Environment
+Ensure you have the required dependencies installed. You can create a virtual environment and install the dependencies using the provided `requirements.txt` file:
+
+```pip install -r requirements.txt```
+
+### 2. Train the Model
+
+To train the model on the MNIST dataset, run the `train_model.py` script:
+```python train_model.py```
+
+This will save the trained model as `saved_models/mnist_cnn_model.h5`.
+
 
 
 
