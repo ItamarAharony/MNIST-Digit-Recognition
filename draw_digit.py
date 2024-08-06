@@ -1,5 +1,6 @@
 #draw_digit.py
 
+
 import tkinter as tk
 from PIL import Image, ImageDraw
 import numpy as np
@@ -24,18 +25,12 @@ class DrawDigitApp:
         self.clear_button = tk.Button(root, text="Clear", command=self.clear)
         self.clear_button.pack()
 
-        self.last_x, self.last_y = None, None
-
     def paint(self, event):
-        if self.last_x and self.last_y:
-            x1, y1 = self.last_x, self.last_y
-            x2, y2 = event.x, event.y
-            self.canvas.create_line(x1, y1, x2, y2, fill='black', width=5)
-            self.draw.line([x1, y1, x2, y2], fill='black', width=5)
-        self.last_x, self.last_y = event.x, event.y
-
-    def reset(self, event):
-        self.last_x, self.last_y = None, None
+        radius = 5
+        x1, y1 = (event.x - radius), (event.y - radius)
+        x2, y2 = (event.x + radius), (event.y + radius)
+        self.canvas.create_oval(x1, y1, x2, y2, fill='black', width=10)
+        self.draw.ellipse([x1, y1, x2, y2], fill='black', outline='black')
 
     def save_and_close(self):
         # Resize the image to 28x28
@@ -51,7 +46,6 @@ class DrawDigitApp:
         self.canvas.delete("all")
         self.image = Image.new("L", (200, 200), 'white')
         self.draw = ImageDraw.Draw(self.image)
-        self.last_x, self.last_y = None, None
 
 if __name__ == "__main__":
     root = tk.Tk()
