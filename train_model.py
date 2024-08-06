@@ -1,3 +1,5 @@
+#train_model.py
+
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.utils import to_categorical
@@ -44,6 +46,14 @@ def train_model():
     
     # Ensure the directory exists
     if not os.path.exists('saved_models'):
+        os.makedirs('saved_models')
+    
+    # Save the model
+    model.save('saved_models/mnist_cnn_model.h5')
+
+if __name__ == "__main__":
+    train_model()
+
         os.makedirs('saved_models')
     
     # Save the model
