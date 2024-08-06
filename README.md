@@ -51,13 +51,19 @@ Ensure you have the required dependencies installed. You can create a virtual en
 ```pip install -r requirements.txt```
 
 To exit the virtual environment:
+
 ```deactivate```
+
+
 #### Returning to the Virtual Environment
 If you have already completed the first-time activation, enter it by typing the command:
 
+
 ```activate py38```
 
+
 and exit by typing:
+
 
 ```deactivate```
 
