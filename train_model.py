@@ -51,12 +51,6 @@ def train_model():
     # Save the model
     model.save('saved_models/mnist_cnn_model.h5')
 
-if __name__ == "__main__":
-    train_model()
-    os.makedirs('saved_models')
-    
-    # Save the model
-    model.save('saved_models/mnist_cnn_model.h5')
 
 if __name__ == "__main__":
     train_model()
