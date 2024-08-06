@@ -6,18 +6,17 @@ This project is a convolutional neural network (CNN) implementation to recognize
 
 mnist_digit_recognition/ <br />
 │ <br />
-├──  data_preprocessing.py <br />
-├──  train_model.py <br />
-├── evaluate_model.py <br />
-├──  draw_digit.py <br />
-├── predict_digit.py <br />
-│ <br />
 ├── saved_models/ <br />
 │ └── mnist_cnn_model.h5 <br />
 │ <br />
 ├── data <br />
 │ └── images of hand-drawn digits <br />
 │ <br />
+├──  data_preprocessing.py <br />
+├──  train_model.py <br />
+├── evaluate_model.py <br />
+├──  draw_digit.py <br />
+├── predict_digit.py <br />
 ├── README.md <br />
 ├── requirements.txt <br />
 └── .gitignore <br />
