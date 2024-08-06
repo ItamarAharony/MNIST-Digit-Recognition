@@ -53,8 +53,7 @@ def train_model():
 
 if __name__ == "__main__":
     train_model()
-
-        os.makedirs('saved_models')
+    os.makedirs('saved_models')
     
     # Save the model
     model.save('saved_models/mnist_cnn_model.h5')
