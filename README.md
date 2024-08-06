@@ -71,21 +71,21 @@ and exit by typing:
 
 To train the model on the MNIST dataset, run the `train_model.py` script:
 
-```python scripts/train_model.py```
+```python train_model.py```
 
 This will save the trained model as `saved_models/mnist_cnn_model.h5`.
 
 ### 3. Evaluate the Model
-To evaluate the trained model, run the `evaluate_model.py` script:
+To test a trained model's ability to predict digits from the MNISt database, run the `evaluate_model.py` script:
 
-```python scripts/evaluate_model.py```
+```python evaluate_model.py```
 
 ### 4. Predict Digits
 
 #### Drawing and Predicting Digits
 To draw a digit on a canvas and predict it, use the `draw_digit.py` script:
 
-```python scripts/draw_digit.py```
+```python draw_digit.py```
 
 
 #### Using Pre-existing Digit Images
@@ -94,7 +94,7 @@ To draw a digit on a canvas and predict it, use the `draw_digit.py` script:
 2. Place it in the `data` directory or specify its path in the `predict_digit.py` script.
 3. Run the prediction script:
 
-```python scripts/predict_digit.py --image_path data/my_digit.png```
+```python predict_digit.py --image_path data/my_digit.png```
 
 
 
