@@ -1,5 +1,3 @@
-#train_model.py
-
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.utils import to_categorical
@@ -8,7 +6,7 @@ import os
 
 def build_model():
     """
-    Build and return a CNN model.
+    Build and return a CNN model with dropout layers to avoid overfitting.
     
     Returns:
         model (tf.keras.Model): Compiled CNN model.
@@ -21,6 +19,7 @@ def build_model():
         tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),
         tf.keras.layers.Flatten(),
         tf.keras.layers.Dense(64, activation='relu'),
+        tf.keras.layers.Dropout(0.5),  # Dropout layer with a rate of 50%
         tf.keras.layers.Dense(10, activation='softmax')
     ])
     return model
