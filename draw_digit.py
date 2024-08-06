@@ -26,7 +26,7 @@ class DrawDigitApp:
         self.clear_button.pack()
 
     def paint(self, event):
-        radius = 5
+        radius = 3
         x1, y1 = (event.x - radius), (event.y - radius)
         x2, y2 = (event.x + radius), (event.y + radius)
         self.canvas.create_oval(x1, y1, x2, y2, fill='black', width=10)
