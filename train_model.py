@@ -1,10 +1,9 @@
-#train_model.py
-
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.utils import to_categorical
 from data_preprocessing import load_data
 import os
+import argparse
 
 def build_model():
     """
@@ -26,9 +25,12 @@ def build_model():
     ])
     return model
 
-def train_model():
+def train_model(numEpochs):
     """
     Train the CNN model on the MNIST dataset and save the trained model.
+    
+    Args:
+        numEpochs (int): Number of epochs to train the model.
     """
     # Load and preprocess the data
     (train_images, train_labels), (test_images, test_labels) = load_data()
@@ -42,7 +44,7 @@ def train_model():
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
     
     # Train the model
-    model.fit(train_images, train_labels, epochs=5, batch_size=64, validation_data=(test_images, test_labels))
+    model.fit(train_images, train_labels, epochs=numEpochs, batch_size=64, validation_data=(test_images, test_labels))
     
     # Ensure the directory exists
     if not os.path.exists('saved_models'):
@@ -51,6 +53,16 @@ def train_model():
     # Save the model
     model.save('saved_models/mnist_cnn_model.h5')
 
-
 if __name__ == "__main__":
-    train_model()
+    # Parse command-line arguments
+    """
+    Recommended to use 50 epochs or more (may take a while to run).
+    To run the program with 50 epochs, type into the command line: 
+    python train_model.py --epochs 50
+    """
+    parser = argparse.ArgumentParser(description='Train a CNN model on the MNIST dataset.')
+    parser.add_argument('--epochs', type=int, default=5, help='Number of epochs to train the model.')
+    args = parser.parse_args()
+    
+    # Train the model with the specified number of epochs
+    train_model(args.epochs)
