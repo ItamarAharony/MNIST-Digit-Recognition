@@ -71,9 +71,15 @@ and exit by typing:
 
 To train the model on the MNIST dataset, run the `train_model.py` script:
 
-```python train_model.py```
+```python train_model.py```,
+which will train the model for 5 epochs by default.
+It is recommended to use 50 epochs or more to obtain a more accurate model (may take a while to run).
+To run the program for 50 epochs,
+type into the command line: 
+  
+  ```python train_model.py --epochs 50```
 
-This will save the trained model as `saved_models/mnist_cnn_model.h5`.
+After train_model.py finishes running, it will save the trained model as `saved_models/mnist_cnn_model.h5`.
 
 ### 3. Evaluate the Model
 To test a trained model's ability to predict digits from the MNISt database, run the `evaluate_model.py` script:
