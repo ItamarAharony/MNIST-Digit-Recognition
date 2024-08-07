@@ -20,7 +20,7 @@ def build_model():
         tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),
         tf.keras.layers.Flatten(),
         tf.keras.layers.Dense(64, activation='relu'),
-        tf.keras.layers.Dropout(0.5),  # Dropout layer with a rate of 50%
+        tf.keras.layers.Dropout(0.1),  # Dropout layer with a rate of 10%
         tf.keras.layers.Dense(10, activation='softmax')
     ])
     return model
