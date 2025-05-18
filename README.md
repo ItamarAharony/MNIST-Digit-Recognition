@@ -1,6 +1,6 @@
 # MNIST Digit Recognition
 
-This project is a convolutional neural network (CNN) implementation to recognize handwritten digits using the MNIST dataset.
+This project is a convolutional neural network (CNN) implementation to recognize handwritten digits using the MNIST dataset. This is a simplification of a freelance project whose complete implementation has been kept confidential.
 
 ## Project Structure
 
